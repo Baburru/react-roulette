@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How to create a new project in Photoshop ?",
+    "answer": "To open a new project in Photoshop, go to the 'File' menu, then select 'New'. You can define dimensions, resolution and other parameters for your new project."
+  },
+  {
+    "question": "What is the default selection tool in Photoshop and how do I use it?",
+    "answer": "The default selection tool in Photoshop is the Selection Rectangle tool (often activated by default). To use it, click and drag to create a rectangle around the area you wish to select."
+  },
+  {
+    "question": "How do I change the color of a brush in Photoshop?",
+    "answer": "You can change the color of a brush by clicking on the color box in the toolbar, then selecting a new color from the palette that appears."
+  },
+  {
+    "question": "Where can I find the image resizing options in Photoshop?",
+    "answer": "Image resizing options can be found in the 'Image' menu. Go to 'Image' > 'Image Size' to adjust the image size."
+  },
+  {
+    "question": "What's the difference between 'Save' and 'Save As' in Photoshop?",
+    "answer": "'Save' saves your file in its original format. 'Save As' saves the file with a new name or in a new folder, and you can choose a different format if required."
+  },
+  {
+    "question": "How do you undo the last action you performed in Photoshop?",
+    "answer": "You can undo the last action by pressing 'Ctrl + Z' (Windows) or 'Command + Z' (Mac). To undo several actions, use 'Ctrl + Alt + Z' (Windows) or 'Command + Option + Z (Mac)."
+  },
+  {
+    "question": "Where can you adjust image brightness and contrast in Photoshop?",
+    "answer": "To adjust brightness and contrast, go to 'Image' > 'Adjustments' > 'Brightness/Contrast'."
+  },
+  {
+    "question": "How do you add a new layer to your project in Photoshop?",
+    "answer": "To add a new layer, click on the 'New layer' icon at the bottom of the layers panel, or use the keyboard shortcut 'Ctrl + Shift + N' (Windows) or 'Command + Shift + N' (Mac)."
+  },
+  {
+    "question": "What is the purpose of the Eyedropper tool in Photoshop?",
+    "answer": "The eyedropper tool enables you to select a specific color in an image. By clicking on a color with the dropper, you can use it to paint, fill or adjust other elements."
+  },
+  {
+    "question": "How do I rotate an image in Photoshop?",
+    "answer": "Go to the 'Image' > 'Image Rotation' menu to choose from various rotation options, such as 90-degree rotation or free rotation."
+  }
+]

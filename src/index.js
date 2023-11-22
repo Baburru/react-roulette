@@ -1,13 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import WheelComponent from "./Components/Wheel/Wheel";
+import QuestionComponent from "./Components/MCQ/McqComponent";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+import "./myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF";
+import CongratsComponent from "./Components/Congrats/CongratsComponent";
+import FailComponent from "./Components/Fail/FailComponent";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <WheelComponent />,
+  },
+  {
+    path: "/questions",
+    element: <QuestionComponent />,
+  },
+  {
+    path: "/congrats",
+    element: <CongratsComponent />,
+  },
+  {
+    path: "/failure",
+    element: <FailComponent />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

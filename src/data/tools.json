@@ -1,0 +1,42 @@
+[
+  {
+    "toolname": "Brush Tool",
+    "definition": "This tool lets you paint on an image with different shapes, sizes and opacities. It is often used to apply colors, shadows and textures."
+  },
+  {
+    "toolname": "Paint Bucket Tool",
+    "definition": "This tool fills a closed area of the same color with the currently selected color. Useful for quickly adding color to a specific area."
+  },
+  {
+    "toolname": "Selection (Marquee Tool) ",
+    "definition": "These tools can be used to select rectangular or elliptical shapes. They are used to isolate a specific part of an image."
+  },
+  {
+    "toolname": "Magic Wand Tool",
+    "definition": "This tool selects areas of similar color according to a tolerance threshold. It is useful for selecting areas of homogeneous color."
+  },
+  {
+    "toolname": "Clone Stamp Tool",
+    "definition": "Also known as a 'duplication stamp', this tool allows you to copy part of an image for reproduction elsewhere. Useful for eliminating imperfections or duplicating elements."
+  },
+  {
+    "toolname": "Eraser Tool",
+    "definition": "As its name suggests, this tool erases parts of the image. It can be used to correct errors or adjust specific areas."
+  },
+  {
+    "toolname": "Gradient Tool",
+    "definition": "This tool creates a gradient of colors between two points. It is often used to create background or transition effects."
+  },
+  {
+    "toolname": "Text Tool ",
+    "definition": "Definition: This tool lets you add text to an image. You can customize the font, size and color of the text."
+  },
+  {
+    "toolname": "Zoom (Zoom Tool)",
+    "definition": "The zoom tool allows you to move the view closer to or further away from the image. It is essential for working on fine details."
+  },
+  {
+    "toolname": "Hand Tool",
+    "definition": "This tool lets you scroll the image when it's enlarged, making it easier to navigate and manipulate details."
+  }
+]
