@@ -40,22 +40,62 @@ const ResultModal = ({ isOpen, closeModal, option, modalStyles }) => {
       appElement={document.getElementById("root")}
       style={modalStyles}
     >
-      <h2>Résultat</h2>
+      <button onClick={closeModal}>Close X</button>
       {option.toLowerCase() === "challenge" && (
-        <p>{randomOutput ? randomOutput.challenge : "Aucun défi trouvé"}</p>
+        <p
+          style={{
+            fontWeight: "bold",
+            textAlign: "center",
+            fontSize: "50px",
+            margin: "0",
+            position: "absolute",
+            top: "50%",
+            transform: "translateY(-50%)",
+            maxWidth: "380px",
+          }}
+        >
+          {randomOutput ? randomOutput.challenge : "Aucun défi trouvé"}
+        </p>
       )}
       {option.toLowerCase() === "category" && (
-        <p>
+        <p
+          style={{
+            fontWeight: "bold",
+            textAlign: "center",
+            fontSize: "50px",
+            margin: "0",
+            position: "absolute",
+            top: "50%",
+            transform: "translateY(-50%)",
+            maxWidth: "380px",
+          }}
+        >
           {randomOutput ? randomOutput.category : "Aucune catégorie trouvée"}
         </p>
       )}
       {option.toLowerCase() === "tools" && (
         <div>
-          <p>
+          <p
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              fontSize: "30px",
+              marginTop: "70px",
+            }}
+          >
             Tool name:{" "}
             {randomOutput ? randomOutput.toolname : "Aucun outil trouvé"}
           </p>
-          <p>
+          <p
+            style={{
+              transform: "rotate(180deg)",
+              textAlign: "center",
+              fontSize: "20px",
+              position: "absolute",
+              maxWidth: "380px",
+              bottom: "50px",
+            }}
+          >
             Définition:{" "}
             {randomOutput
               ? randomOutput.definition
@@ -65,17 +105,32 @@ const ResultModal = ({ isOpen, closeModal, option, modalStyles }) => {
       )}
       {option.toLowerCase() === "questions" && (
         <div>
-          <p>
+          <p
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              fontSize: "30px",
+              marginTop: "70px",
+            }}
+          >
             Question:{" "}
             {randomOutput ? randomOutput.question : "Aucune question trouvée"}
           </p>
-          <p>
+          <p
+            style={{
+              transform: "rotate(180deg)",
+              textAlign: "center",
+              fontSize: "20px",
+              position: "absolute",
+              maxWidth: "380px",
+              bottom: "50px",
+            }}
+          >
             Answer:{" "}
             {randomOutput ? randomOutput.answer : "Aucune réponse trouvée"}
           </p>
         </div>
       )}
-      <button onClick={closeModal}>Close</button>
     </Modal>
   );
 };

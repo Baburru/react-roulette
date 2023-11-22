@@ -4,7 +4,7 @@ import { Wheel } from "react-custom-roulette";
 import Modal from "react-modal";
 import ResultModal from "../ResultModal";
 
-Modal.setAppElement("#root");
+Modal.setAppElement(document.getElementById("root"));
 
 const data = [
   {
@@ -15,6 +15,7 @@ const data = [
       modal: {
         overlay: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
         content: {
+          padding: "3vw",
           position: "absolute",
           borderRadius: "25px",
           top: "50%",
@@ -112,10 +113,12 @@ function WheelComponent() {
 
   const closeModal = () => {
     setModalIsOpen(false);
+    window.location.reload();
   };
 
   return (
     <>
+      <h1>Welcome to the Photoshot spin wheel !</h1>
       <div id="wheel">
         <Wheel
           mustStartSpinning={mustSpin}
@@ -127,8 +130,10 @@ function WheelComponent() {
             displayResult();
           }}
         />
+        <button className="spin-button" onClick={handleSpinClick}>
+          Spin !
+        </button>
       </div>
-      <button onClick={handleSpinClick}>Lancer la roue</button>
 
       <ResultModal
         isOpen={modalIsOpen}
