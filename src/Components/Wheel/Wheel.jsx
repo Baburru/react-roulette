@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import Modal from "react-modal";
 import ResultModal from "../ResultModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRotate } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+library.add(faRotate);
 
 Modal.setAppElement(document.getElementById("root"));
 
@@ -23,7 +28,7 @@ const data = [
           transform: "translate(-50%, -50%)",
           backgroundColor: "#2A0F11",
           color: "#F4981B",
-          width: "380px",
+          width: "85vw",
           height: "586px",
         },
       },
@@ -44,7 +49,7 @@ const data = [
           transform: "translate(-50%, -50%)",
           backgroundColor: "#141C32",
           color: "#46A2DA",
-          width: "380px",
+          width: "85vw",
           height: "586px",
         },
       },
@@ -65,7 +70,7 @@ const data = [
           transform: "translate(-50%, -50%)",
           backgroundColor: "#19331D ",
           color: "#72B745",
-          width: "380px",
+          width: "85vw",
           height: "586px",
         },
       },
@@ -86,7 +91,7 @@ const data = [
           transform: "translate(-50%, -50%)",
           backgroundColor: "#430F23",
           color: "#E83967 ",
-          width: "380px",
+          width: "85vw",
           height: "586px",
         },
       },
@@ -124,6 +129,8 @@ function WheelComponent() {
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
+          fontSize={30}
+          disableInitialAnimation
           spinDuration={0.33}
           onStopSpinning={() => {
             setMustSpin(false);
@@ -131,7 +138,7 @@ function WheelComponent() {
           }}
         />
         <button className="spin-button" onClick={handleSpinClick}>
-          Spin !
+          <FontAwesomeIcon icon="fa-solid fa-rotate" />{" "}
         </button>
       </div>
 

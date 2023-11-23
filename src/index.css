@@ -1,13 +1,13 @@
 body {
   background-color: #b8b8b8;
   margin: 0;
-  font-family: Myriad Pro;
+  font-family:  Arial Black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: Myriad Pro;
+  font-family: Arial Black;
 }
 
 .ReactModal__Overlay {
@@ -16,6 +16,18 @@ code {
 
 .ReactModal_Overlay--after-open {
   z-index: 1000;
+}
+.ReactModal__Content--after-open {
+  max-width: 380px !important;
+}
+
+.close-button {
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.281);
+  border-radius: 20px;
 }
 
 .spin-button {
@@ -27,9 +39,15 @@ code {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   border-radius: 50px;
-  width: 30vw;
+  margin-top: 4vh;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.sc-gsTCUz {
+  width: 100vw !important;
+  height: 100vw !important;
 }
 
 .spin-button:hover {
@@ -38,7 +56,10 @@ code {
 
 h1 {
   text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
+
 
 
 #wheel {

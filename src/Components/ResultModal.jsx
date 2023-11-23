@@ -4,6 +4,11 @@ import challenges from "../data/challenges.json";
 import categories from "../data/category.json";
 import tools from "../data/tools.json";
 import questions from "../data/questions.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+library.add(faXmark);
 
 const ResultModal = ({ isOpen, closeModal, option, modalStyles }) => {
   const [randomOutput, setRandomOutput] = useState(null);
@@ -40,13 +45,15 @@ const ResultModal = ({ isOpen, closeModal, option, modalStyles }) => {
       appElement={document.getElementById("root")}
       style={modalStyles}
     >
-      <button onClick={closeModal}>Close X</button>
+      <button className="close-button" onClick={closeModal}>
+        <FontAwesomeIcon icon="fa-solid fa-xmark" />
+      </button>
       {option.toLowerCase() === "challenge" && (
         <p
           style={{
             fontWeight: "bold",
             textAlign: "center",
-            fontSize: "50px",
+            fontSize: "40px",
             margin: "0",
             position: "absolute",
             top: "50%",
